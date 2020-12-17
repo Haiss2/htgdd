@@ -1,0 +1,2350 @@
+Started GET "/" for ::1 at 2020-12-03 08:00:38 +0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.7ms | Allocations: 400)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 2205)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-03 08:00:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-03 08:02:48 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.9ms | Allocations: 178)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 728)
+
+
+Started GET "/" for ::1 at 2020-12-03 08:16:28 +0700
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.4) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.4) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.4) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-03 08:17:35 +0700
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.4) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.4) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.4) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-03 08:18:41 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 185)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 859)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Student (20201203013255)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Student (20201203013255)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "programs" ("id" bigserial primary key, "name" character varying, "semester" integer, "student_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_programs_on_student_id" ON "programs"  ("student_id")[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "label" character varying, "volumn" character varying, "program_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_program_id" ON "courses"  ("program_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201203013255"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-03 01:46:52.922930"], ["updated_at", "2020-12-03 01:46:52.922930"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (24.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (64.5ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Student (20201203013255)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "programs" ("id" bigserial primary key, "name" character varying, "semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "label" character varying, "volumn" character varying, "program_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_program_id" ON "courses"  ("program_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201203013255"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-03 01:58:31.649343"], ["updated_at", "2020-12-03 01:58:31.649343"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["created_at", "2020-12-03 02:04:47.761459"], ["updated_at", "2020-12-03 02:04:47.761459"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["created_at", "2020-12-03 02:04:47.772785"], ["updated_at", "2020-12-03 02:04:47.772785"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["created_at", "2020-12-03 02:04:47.777786"], ["updated_at", "2020-12-03 02:04:47.777786"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["created_at", "2020-12-03 02:04:47.782728"], ["updated_at", "2020-12-03 02:04:47.782728"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["created_at", "2020-12-03 02:11:49.639865"], ["updated_at", "2020-12-03 02:11:49.639865"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["created_at", "2020-12-03 02:11:49.651768"], ["updated_at", "2020-12-03 02:11:49.651768"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["created_at", "2020-12-03 02:11:49.656916"], ["updated_at", "2020-12-03 02:11:49.656916"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["created_at", "2020-12-03 02:11:49.662172"], ["updated_at", "2020-12-03 02:11:49.662172"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["created_at", "2020-12-03 02:13:56.221619"], ["updated_at", "2020-12-03 02:13:56.221619"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["created_at", "2020-12-03 02:13:56.233634"], ["updated_at", "2020-12-03 02:13:56.233634"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["created_at", "2020-12-03 02:13:56.238676"], ["updated_at", "2020-12-03 02:13:56.238676"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["created_at", "2020-12-03 02:13:56.244457"], ["updated_at", "2020-12-03 02:13:56.244457"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.7ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 02:13:56.256502"], ["updated_at", "2020-12-03 02:13:56.256502"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 02:13:56.261993"], ["updated_at", "2020-12-03 02:13:56.261993"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 02:13:56.266959"], ["updated_at", "2020-12-03 02:13:56.266959"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 02:13:56.272279"], ["updated_at", "2020-12-03 02:13:56.272279"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 02:13:56.277471"], ["updated_at", "2020-12-03 02:13:56.277471"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 02:13:56.282698"], ["updated_at", "2020-12-03 02:13:56.282698"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 02:13:56.287953"], ["updated_at", "2020-12-03 02:13:56.287953"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 02:13:56.292844"], ["updated_at", "2020-12-03 02:13:56.292844"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 02:13:56.297567"], ["updated_at", "2020-12-03 02:13:56.297567"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.8ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 02:13:56.304704"], ["updated_at", "2020-12-03 02:13:56.304704"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["created_at", "2020-12-03 02:15:19.531124"], ["updated_at", "2020-12-03 02:15:19.531124"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["created_at", "2020-12-03 02:15:19.542759"], ["updated_at", "2020-12-03 02:15:19.542759"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["created_at", "2020-12-03 02:15:19.547679"], ["updated_at", "2020-12-03 02:15:19.547679"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["created_at", "2020-12-03 02:15:19.552495"], ["updated_at", "2020-12-03 02:15:19.552495"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 02:15:19.564300"], ["updated_at", "2020-12-03 02:15:19.564300"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 02:15:19.569195"], ["updated_at", "2020-12-03 02:15:19.569195"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 02:15:19.573907"], ["updated_at", "2020-12-03 02:15:19.573907"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 02:15:19.578536"], ["updated_at", "2020-12-03 02:15:19.578536"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 02:15:19.583240"], ["updated_at", "2020-12-03 02:15:19.583240"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 02:15:19.587893"], ["updated_at", "2020-12-03 02:15:19.587893"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 02:15:19.592309"], ["updated_at", "2020-12-03 02:15:19.592309"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 02:15:19.596715"], ["updated_at", "2020-12-03 02:15:19.596715"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 02:15:19.601015"], ["updated_at", "2020-12-03 02:15:19.601015"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 02:15:19.605835"], ["updated_at", "2020-12-03 02:15:19.605835"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["created_at", "2020-12-03 02:16:54.223334"], ["updated_at", "2020-12-03 02:16:54.223334"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["created_at", "2020-12-03 02:16:54.235578"], ["updated_at", "2020-12-03 02:16:54.235578"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["created_at", "2020-12-03 02:16:54.240682"], ["updated_at", "2020-12-03 02:16:54.240682"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["created_at", "2020-12-03 02:16:54.245680"], ["updated_at", "2020-12-03 02:16:54.245680"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 02:16:54.261226"], ["updated_at", "2020-12-03 02:16:54.261226"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 02:16:54.266824"], ["updated_at", "2020-12-03 02:16:54.266824"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 02:16:54.271793"], ["updated_at", "2020-12-03 02:16:54.271793"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 02:16:54.276920"], ["updated_at", "2020-12-03 02:16:54.276920"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 02:16:54.281687"], ["updated_at", "2020-12-03 02:16:54.281687"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 02:16:54.286299"], ["updated_at", "2020-12-03 02:16:54.286299"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 02:16:54.291383"], ["updated_at", "2020-12-03 02:16:54.291383"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 02:16:54.295973"], ["updated_at", "2020-12-03 02:16:54.295973"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 02:16:54.300545"], ["updated_at", "2020-12-03 02:16:54.300545"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 02:16:54.305375"], ["updated_at", "2020-12-03 02:16:54.305375"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.9ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "program_id", "created_at", "updated_at", "volumn") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Giai Tich 1"], ["label", "MI1240"], ["program_id", 21], ["created_at", "2020-12-03 02:16:54.326414"], ["updated_at", "2020-12-03 02:16:54.326414"], ["volumn", 4]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "program_id", "created_at", "updated_at", "volumn") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vat Ly 1"], ["label", "MI1540"], ["program_id", 21], ["created_at", "2020-12-03 02:16:54.331848"], ["updated_at", "2020-12-03 02:16:54.331848"], ["volumn", 3]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (30.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (122.1ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Student (20201203013255)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Init (20201203013255)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "cpa" decimal, "gpa" decimal, "info" jsonb, "program" character varying, "current_semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "programs" ("id" bigserial primary key, "name" character varying, "semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "label" character varying, "volumn" integer, "program_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_program_id" ON "courses"  ("program_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201203013255"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-03 02:23:15.945359"], ["updated_at", "2020-12-03 02:23:15.945359"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["program", "IT"], ["current_semester", 9], ["created_at", "2020-12-03 02:23:22.270877"], ["updated_at", "2020-12-03 02:23:22.270877"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["program", "IT"], ["current_semester", 8], ["created_at", "2020-12-03 02:23:22.282881"], ["updated_at", "2020-12-03 02:23:22.282881"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["program", "IT"], ["current_semester", 7], ["created_at", "2020-12-03 02:23:22.288328"], ["updated_at", "2020-12-03 02:23:22.288328"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["program", "IT"], ["current_semester", 6], ["created_at", "2020-12-03 02:23:22.293439"], ["updated_at", "2020-12-03 02:23:22.293439"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.6ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 02:23:22.307172"], ["updated_at", "2020-12-03 02:23:22.307172"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 02:23:22.312980"], ["updated_at", "2020-12-03 02:23:22.312980"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 02:23:22.317627"], ["updated_at", "2020-12-03 02:23:22.317627"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 02:23:22.322434"], ["updated_at", "2020-12-03 02:23:22.322434"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 02:23:22.326983"], ["updated_at", "2020-12-03 02:23:22.326983"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 02:23:22.331642"], ["updated_at", "2020-12-03 02:23:22.331642"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 02:23:22.336304"], ["updated_at", "2020-12-03 02:23:22.336304"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 02:23:22.340874"], ["updated_at", "2020-12-03 02:23:22.340874"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 02:23:22.345432"], ["updated_at", "2020-12-03 02:23:22.345432"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 02:23:22.350079"], ["updated_at", "2020-12-03 02:23:22.350079"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.6ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Giai Tich 1"], ["label", "MI1240"], ["volumn", 4], ["program_id", 1], ["created_at", "2020-12-03 02:23:22.364430"], ["updated_at", "2020-12-03 02:23:22.364430"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vat Ly 1"], ["label", "MI1540"], ["volumn", 3], ["program_id", 1], ["created_at", "2020-12-03 02:23:22.369238"], ["updated_at", "2020-12-03 02:23:22.369238"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-12-03 09:27:31 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.6ms | Allocations: 294)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 1536)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-03 09:27:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/1" for ::1 at 2020-12-03 09:27:37 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 10.9ms | Allocations: 7431)
+
+
+Started GET "/students/1" for ::1 at 2020-12-03 09:29:24 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 4.9ms | Allocations: 6302)
+
+
+Started GET "/students/1" for ::1 at 2020-12-03 09:30:26 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 805)
+
+
+Started GET "/students/1" for ::1 at 2020-12-03 09:30:42 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.7ms | Allocations: 8457)
+
+
+  
+NameError (uninitialized constant #<Class:0x00007f905c9dc620>::Progam
+Did you mean?  Program):
+  
+app/models/student.rb:3:in `progams'
+app/controllers/students_controller.rb:5:in `show'
+Started GET "/students/1" for ::1 at 2020-12-03 09:30:55 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.1ms | Allocations: 10370)
+
+
+  
+NoMethodError (undefined method `progam' for #<Student:0x0000562d5aba3488>
+Did you mean?  program
+               progams
+               program?
+               program=):
+  
+app/models/student.rb:3:in `progams'
+app/controllers/students_controller.rb:5:in `show'
+Started GET "/students/1" for ::1 at 2020-12-03 09:31:44 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/controllers/students_controller.rb:5:in `show'
+Completed 200 OK in 39ms (Views: 0.8ms | ActiveRecord: 10.4ms | Allocations: 11318)
+
+
+Started GET "/students/1" for ::1 at 2020-12-03 09:32:50 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:3:in `progams'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 10.9ms | Allocations: 12917)
+
+
+  
+NoMethodError (undefined method `course' for #<Program:0x00007f905ca80838>
+Did you mean?  courses
+               courses=):
+  
+app/models/student.rb:3:in `progams'
+app/controllers/students_controller.rb:5:in `show'
+Started GET "/students/1" for ::1 at 2020-12-03 09:32:54 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:3:in `progams'
+Completed 200 OK in 119ms (Views: 5.6ms | ActiveRecord: 22.3ms | Allocations: 27699)
+
+
+Started GET "/students/1" for ::1 at 2020-12-03 17:16:19 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.9ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:3:in `progams'
+Completed 200 OK in 130ms (Views: 1.0ms | ActiveRecord: 24.6ms | Allocations: 27557)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-03 17:16:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/1" for ::1 at 2020-12-03 17:17:33 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (2.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (3.3ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:3:in `progams'
+Completed 200 OK in 102ms (Views: 1.0ms | ActiveRecord: 14.4ms | Allocations: 11364)
+
+
+Started GET "/" for ::1 at 2020-12-03 17:22:11 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.5ms | Allocations: 185)
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 854)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (21.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (52.7ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Init (20201203013255)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "cpa" decimal, "gpa" decimal, "info" jsonb, "program" character varying, "current_semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "programs" ("id" bigserial primary key, "name" character varying, "semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "label" character varying, "volumn" integer, "program_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_program_id" ON "courses"  ("program_id")[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "diems" ("id" bigserial primary key, "course_id" bigint, "student_id" bigint, "mark" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_diems_on_course_id" ON "diems"  ("course_id")[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_diems_on_student_id" ON "diems"  ("student_id")[0m
+  [1m[35m (4.1ms)[0m  [1m[35mALTER TABLE "diems" ADD CONSTRAINT "fk_rails_5ae6d0509d"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "diems" ADD CONSTRAINT "fk_rails_1938ecbbc0"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+[0m
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "courses" ADD CONSTRAINT "fk_rails_bd2a4b4f85"
+FOREIGN KEY ("program_id")
+  REFERENCES "programs" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201203013255"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-03 10:31:02.030488"], ["updated_at", "2020-12-03 10:31:02.030488"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["program", "IT"], ["current_semester", 9], ["created_at", "2020-12-03 10:31:08.513919"], ["updated_at", "2020-12-03 10:31:08.513919"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["program", "IT"], ["current_semester", 8], ["created_at", "2020-12-03 10:31:08.519043"], ["updated_at", "2020-12-03 10:31:08.519043"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["program", "IT"], ["current_semester", 7], ["created_at", "2020-12-03 10:31:08.524015"], ["updated_at", "2020-12-03 10:31:08.524015"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["program", "IT"], ["current_semester", 6], ["created_at", "2020-12-03 10:31:08.528681"], ["updated_at", "2020-12-03 10:31:08.528681"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.6ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 10:31:08.541022"], ["updated_at", "2020-12-03 10:31:08.541022"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 10:31:08.545923"], ["updated_at", "2020-12-03 10:31:08.545923"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 10:31:08.550293"], ["updated_at", "2020-12-03 10:31:08.550293"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 10:31:08.554527"], ["updated_at", "2020-12-03 10:31:08.554527"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 10:31:08.558868"], ["updated_at", "2020-12-03 10:31:08.558868"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 10:31:08.563267"], ["updated_at", "2020-12-03 10:31:08.563267"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 10:31:08.567305"], ["updated_at", "2020-12-03 10:31:08.567305"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 10:31:08.571392"], ["updated_at", "2020-12-03 10:31:08.571392"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 10:31:08.575671"], ["updated_at", "2020-12-03 10:31:08.575671"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 10:31:08.579925"], ["updated_at", "2020-12-03 10:31:08.579925"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Giai Tich 1"], ["label", "MI1240"], ["volumn", 4], ["program_id", 1], ["created_at", "2020-12-03 10:31:08.593410"], ["updated_at", "2020-12-03 10:31:08.593410"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.6ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vat Ly 1"], ["label", "MI1540"], ["volumn", 3], ["program_id", 1], ["created_at", "2020-12-03 10:31:08.598535"], ["updated_at", "2020-12-03 10:31:08.598535"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["program", "IT"], ["current_semester", 9], ["created_at", "2020-12-03 10:31:59.642429"], ["updated_at", "2020-12-03 10:31:59.642429"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["program", "IT"], ["current_semester", 8], ["created_at", "2020-12-03 10:31:59.647328"], ["updated_at", "2020-12-03 10:31:59.647328"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["program", "IT"], ["current_semester", 7], ["created_at", "2020-12-03 10:31:59.652151"], ["updated_at", "2020-12-03 10:31:59.652151"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["program", "IT"], ["current_semester", 6], ["created_at", "2020-12-03 10:31:59.656905"], ["updated_at", "2020-12-03 10:31:59.656905"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 10:31:59.669322"], ["updated_at", "2020-12-03 10:31:59.669322"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 10:31:59.674093"], ["updated_at", "2020-12-03 10:31:59.674093"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 10:31:59.678741"], ["updated_at", "2020-12-03 10:31:59.678741"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 10:31:59.683378"], ["updated_at", "2020-12-03 10:31:59.683378"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 10:31:59.688167"], ["updated_at", "2020-12-03 10:31:59.688167"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 10:31:59.692910"], ["updated_at", "2020-12-03 10:31:59.692910"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 10:31:59.697317"], ["updated_at", "2020-12-03 10:31:59.697317"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 10:31:59.701796"], ["updated_at", "2020-12-03 10:31:59.701796"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 10:31:59.706526"], ["updated_at", "2020-12-03 10:31:59.706526"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 10:31:59.711721"], ["updated_at", "2020-12-03 10:31:59.711721"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.7ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Giai Tich 1"], ["label", "MI1240"], ["volumn", 4], ["program_id", 11], ["created_at", "2020-12-03 10:31:59.726836"], ["updated_at", "2020-12-03 10:31:59.726836"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vat Ly 1"], ["label", "MI1540"], ["volumn", 3], ["program_id", 11], ["created_at", "2020-12-03 10:31:59.732188"], ["updated_at", "2020-12-03 10:31:59.732188"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiem Create (1.0ms)[0m  [1m[32mINSERT INTO "diems" ("course_id", "student_id", "mark", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["course_id", 1], ["student_id", 1], ["mark", "A"], ["created_at", "2020-12-03 10:31:59.753931"], ["updated_at", "2020-12-03 10:31:59.753931"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiem Create (0.5ms)[0m  [1m[32mINSERT INTO "diems" ("course_id", "student_id", "mark", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["course_id", 2], ["student_id", 1], ["mark", "A+"], ["created_at", "2020-12-03 10:31:59.761006"], ["updated_at", "2020-12-03 10:31:59.761006"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (20.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (53.2ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Init (20201203013255)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "cpa" decimal, "gpa" decimal, "info" jsonb, "program" character varying, "current_semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "programs" ("id" bigserial primary key, "name" character varying, "semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "label" character varying, "volumn" integer, "program_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_program_id" ON "courses"  ("program_id")[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "diems" ("id" bigserial primary key, "course_id" bigint, "student_id" bigint, "mark" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE  INDEX  "index_diems_on_course_id" ON "diems"  ("course_id")[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_diems_on_student_id" ON "diems"  ("student_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "diems" ADD CONSTRAINT "fk_rails_5ae6d0509d"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "diems" ADD CONSTRAINT "fk_rails_1938ecbbc0"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "courses" ADD CONSTRAINT "fk_rails_bd2a4b4f85"
+FOREIGN KEY ("program_id")
+  REFERENCES "programs" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201203013255"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-03 10:33:22.489245"], ["updated_at", "2020-12-03 10:33:22.489245"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["program", "IT"], ["current_semester", 9], ["created_at", "2020-12-03 10:33:25.416669"], ["updated_at", "2020-12-03 10:33:25.416669"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["program", "IT"], ["current_semester", 8], ["created_at", "2020-12-03 10:33:25.422541"], ["updated_at", "2020-12-03 10:33:25.422541"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["program", "IT"], ["current_semester", 7], ["created_at", "2020-12-03 10:33:25.427973"], ["updated_at", "2020-12-03 10:33:25.427973"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["program", "IT"], ["current_semester", 6], ["created_at", "2020-12-03 10:33:25.433207"], ["updated_at", "2020-12-03 10:33:25.433207"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.6ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 10:33:25.446117"], ["updated_at", "2020-12-03 10:33:25.446117"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 10:33:25.451567"], ["updated_at", "2020-12-03 10:33:25.451567"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 10:33:25.456717"], ["updated_at", "2020-12-03 10:33:25.456717"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 10:33:25.462007"], ["updated_at", "2020-12-03 10:33:25.462007"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 10:33:25.467182"], ["updated_at", "2020-12-03 10:33:25.467182"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 10:33:25.472250"], ["updated_at", "2020-12-03 10:33:25.472250"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 10:33:25.477168"], ["updated_at", "2020-12-03 10:33:25.477168"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 10:33:25.482196"], ["updated_at", "2020-12-03 10:33:25.482196"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.5ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 10:33:25.487159"], ["updated_at", "2020-12-03 10:33:25.487159"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 10:33:25.492523"], ["updated_at", "2020-12-03 10:33:25.492523"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.8ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Giai Tich 1"], ["label", "MI1240"], ["volumn", 4], ["program_id", 1], ["created_at", "2020-12-03 10:33:25.506759"], ["updated_at", "2020-12-03 10:33:25.506759"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vat Ly 1"], ["label", "MI1540"], ["volumn", 3], ["program_id", 1], ["created_at", "2020-12-03 10:33:25.512757"], ["updated_at", "2020-12-03 10:33:25.512757"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiem Create (0.8ms)[0m  [1m[32mINSERT INTO "diems" ("course_id", "student_id", "mark", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["course_id", 1], ["student_id", 1], ["mark", "A"], ["created_at", "2020-12-03 10:33:25.534158"], ["updated_at", "2020-12-03 10:33:25.534158"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiem Create (0.5ms)[0m  [1m[32mINSERT INTO "diems" ("course_id", "student_id", "mark", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["course_id", 2], ["student_id", 1], ["mark", "A+"], ["created_at", "2020-12-03 10:33:25.541695"], ["updated_at", "2020-12-03 10:33:25.541695"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/students/1" for ::1 at 2020-12-03 17:33:37 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:3:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:3:in `progams'
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 18.2ms | Allocations: 29570)
+
+
+  
+NoMethodError (undefined method `diems' for #<Student:0x00007f41d4db0138>
+Did you mean?  Digest):
+  
+app/controllers/students_controller.rb:5:in `show'
+Started GET "/students/1" for ::1 at 2020-12-03 17:34:01 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.3ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.4ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:5:in `show'
+Completed 200 OK in 107ms (Views: 3.5ms | ActiveRecord: 24.4ms | Allocations: 29749)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (17.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crm"[0m
+  [1m[35m (63.3ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "crm" ENCODING = 'unicode'[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Init (20201203013255)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "name" character varying, "number" character varying, "cpa" decimal DEFAULT 0.0, "gpa" decimal DEFAULT 0.0, "info" jsonb DEFAULT '{}', "program" character varying, "current_semester" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "programs" ("id" bigserial primary key, "name" character varying, "semester" integer, "info" jsonb DEFAULT '{}', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "label" character varying, "volumn" integer, "info" jsonb DEFAULT '{}', "program_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_program_id" ON "courses"  ("program_id")[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "diems" ("id" bigserial primary key, "course_id" bigint, "student_id" bigint, "mark" character varying, "info" jsonb DEFAULT '{}', "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_diems_on_course_id" ON "diems"  ("course_id")[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_diems_on_student_id" ON "diems"  ("student_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "diems" ADD CONSTRAINT "fk_rails_5ae6d0509d"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "diems" ADD CONSTRAINT "fk_rails_1938ecbbc0"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "courses" ADD CONSTRAINT "fk_rails_bd2a4b4f85"
+FOREIGN KEY ("program_id")
+  REFERENCES "programs" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201203013255"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-03 10:37:15.923774"], ["updated_at", "2020-12-03 10:37:15.923774"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5369392794882513810)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.7ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lê Khả Hải"], ["number", "20164835"], ["program", "IT"], ["current_semester", 9], ["created_at", "2020-12-03 10:37:20.508066"], ["updated_at", "2020-12-03 10:37:20.508066"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Trần Quang Huy"], ["number", "20164836"], ["program", "IT"], ["current_semester", 8], ["created_at", "2020-12-03 10:37:20.513692"], ["updated_at", "2020-12-03 10:37:20.513692"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hồ Anh Tiến"], ["number", "20172835"], ["program", "IT"], ["current_semester", 7], ["created_at", "2020-12-03 10:37:20.518344"], ["updated_at", "2020-12-03 10:37:20.518344"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("name", "number", "program", "current_semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Đậu Trung Dũng"], ["number", "20172837"], ["program", "IT"], ["current_semester", 6], ["created_at", "2020-12-03 10:37:20.522783"], ["updated_at", "2020-12-03 10:37:20.522783"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.6ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 1], ["created_at", "2020-12-03 10:37:20.535531"], ["updated_at", "2020-12-03 10:37:20.535531"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 2], ["created_at", "2020-12-03 10:37:20.540412"], ["updated_at", "2020-12-03 10:37:20.540412"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 3], ["created_at", "2020-12-03 10:37:20.545001"], ["updated_at", "2020-12-03 10:37:20.545001"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 4], ["created_at", "2020-12-03 10:37:20.549637"], ["updated_at", "2020-12-03 10:37:20.549637"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 5], ["created_at", "2020-12-03 10:37:20.554119"], ["updated_at", "2020-12-03 10:37:20.554119"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 6], ["created_at", "2020-12-03 10:37:20.558571"], ["updated_at", "2020-12-03 10:37:20.558571"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 7], ["created_at", "2020-12-03 10:37:20.563024"], ["updated_at", "2020-12-03 10:37:20.563024"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.3ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 8], ["created_at", "2020-12-03 10:37:20.567540"], ["updated_at", "2020-12-03 10:37:20.567540"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.4ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 9], ["created_at", "2020-12-03 10:37:20.572015"], ["updated_at", "2020-12-03 10:37:20.572015"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProgram Create (0.8ms)[0m  [1m[32mINSERT INTO "programs" ("name", "semester", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "IT"], ["semester", 10], ["created_at", "2020-12-03 10:37:20.578695"], ["updated_at", "2020-12-03 10:37:20.578695"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.9ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Giai Tich 1"], ["label", "MI1240"], ["volumn", 4], ["program_id", 1], ["created_at", "2020-12-03 10:37:20.602353"], ["updated_at", "2020-12-03 10:37:20.602353"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("name", "label", "volumn", "program_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vat Ly 1"], ["label", "MI1540"], ["volumn", 3], ["program_id", 1], ["created_at", "2020-12-03 10:37:20.608005"], ["updated_at", "2020-12-03 10:37:20.608005"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" ORDER BY "students"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiem Create (0.9ms)[0m  [1m[32mINSERT INTO "diems" ("course_id", "student_id", "mark", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["course_id", 1], ["student_id", 1], ["mark", "A"], ["created_at", "2020-12-03 10:37:20.629532"], ["updated_at", "2020-12-03 10:37:20.629532"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiem Create (0.5ms)[0m  [1m[32mINSERT INTO "diems" ("course_id", "student_id", "mark", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["course_id", 2], ["student_id", 1], ["mark", "A+"], ["created_at", "2020-12-03 10:37:20.636377"], ["updated_at", "2020-12-03 10:37:20.636377"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/students/1" for ::1 at 2020-12-03 17:37:40 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.7ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:5:in `show'
+Completed 200 OK in 118ms (Views: 1.0ms | ActiveRecord: 27.7ms | Allocations: 35022)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2020-12-03 18:32:16 +0700
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (1.1ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (2.1ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:5:in `show'
+Completed 200 OK in 167ms (Views: 0.8ms | ActiveRecord: 38.0ms | Allocations: 35020)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2020-12-03 18:32:48 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (0.6ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (2.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.5ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:5:in `show'
+Completed 200 OK in 48ms (Views: 0.8ms | ActiveRecord: 9.0ms | Allocations: 12786)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2020-12-03 18:34:20 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (1.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+  [1m[36mProgram Load (1.5ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (2.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (4.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.7ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:5:in `show'
+Completed 200 OK in 100ms (Views: 1.6ms | ActiveRecord: 18.7ms | Allocations: 12786)
+
+
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:35:00 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:35:12 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:35:16 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.6ms | Allocations: 635)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=login):
+  
+app/controllers/students_controller.rb:4:in `show'
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-12-03 18:35:16 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:35:39 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:35:55 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:36:01 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:36:11 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 404 Not Found in 33ms (ActiveRecord: 15.7ms | Allocations: 2205)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=login):
+  
+app/controllers/students_controller.rb:4:in `show'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:36:24 +0700
+  
+NoMethodError (undefined method `colection' for #<ActionDispatch::Routing::Mapper:0x00007fc894a24018>
+Did you mean?  collection):
+  
+config/routes.rb:5:in `block (2 levels) in <main>'
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:36:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:36:49 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:38:00 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 404 Not Found in 20ms (ActiveRecord: 4.6ms | Allocations: 2083)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=login):
+  
+app/controllers/students_controller.rb:4:in `show'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:38:07 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:38:55 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:39:30 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 404 Not Found in 13ms (ActiveRecord: 7.9ms | Allocations: 2070)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=login):
+  
+app/controllers/students_controller.rb:4:in `show'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:40:16 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 404 Not Found in 10ms (ActiveRecord: 3.5ms | Allocations: 2066)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=login):
+  
+app/controllers/students_controller.rb:4:in `show'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:40:17 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"login"}
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:4:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms | Allocations: 629)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Student with 'id'=login):
+  
+app/controllers/students_controller.rb:4:in `show'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:40:23 +0700
+  
+NoMethodError (undefined method `colection' for #<ActionDispatch::Routing::Mapper:0x00007fc8941a8718>
+Did you mean?  collection):
+  
+config/routes.rb:5:in `block (2 levels) in <main>'
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:40:31 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 87)
+
+
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:40:37 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:40:45 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:41:22 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started OPTIONS "/students/login" for 127.0.0.1 at 2020-12-03 18:43:41 +0700
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:43:58 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 87)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:44:03 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 66)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:44:08 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 66)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:44:27 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 66)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:44:46 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:44:52 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:44:55 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:46:30 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:46:39 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:46:53 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 111)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:00 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:02 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:08 +0700
+Processing by StudentsController#login as HTML
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 111)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:16 +0700
+Processing by StudentsController#login as HTML
+Completed 201 Created in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:18 +0700
+Processing by StudentsController#login as HTML
+Completed 201 Created in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:19 +0700
+Processing by StudentsController#login as HTML
+Completed 201 Created in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:30 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:38 +0700
+Processing by StudentsController#login as HTML
+Completed 202 Accepted in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 111)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:47:51 +0700
+Processing by StudentsController#login as HTML
+Completed 202 Accepted in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:48:22 +0700
+Processing by StudentsController#login as HTML
+Completed 202 Accepted in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 18:48:26 +0700
+Processing by StudentsController#login as HTML
+Completed 202 Accepted in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/" for 192.168.1.222 at 2020-12-03 18:50:57 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 294)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 1536)
+
+
+Started GET "/favicon.ico" for 192.168.1.222 at 2020-12-03 18:50:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 192.168.1.222 at 2020-12-03 18:51:41 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 26.6ms | Allocations: 178)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 728)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 18:51:48 +0700
+Processing by StudentsController#login as HTML
+Completed 202 Accepted in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 157)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 18:51:49 +0700
+Processing by StudentsController#login as HTML
+Completed 202 Accepted in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 18:51:58 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 18:51:59 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 18:52:06 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:52:20 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:52:24 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:52:26 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:52:41 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:55:02 +0700
+  
+NameError (undefined local variable or method `headers' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/students_controller.rb:1:in `<main>'
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:57:46 +0700
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:58:36 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 165)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:58:42 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 18:59:02 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:00:40 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:00:57 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:01:01 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 91)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:02:12 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 19:02:34 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:02:45 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 91)
+
+
+Started GET "/students/login" for 192.168.1.190 at 2020-12-03 19:03:24 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:08:17 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:08:26 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:08:43 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:10:01 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-03 19:10:10 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hais2/.gem/ruby/2.7.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.0ms | Allocations: 294)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 1532)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-12-03 19:10:10 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 19:10:21 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:11:15 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:11:23 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:11:29 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:11:32 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:12:03 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 90)
+
+
+Started GET "/students/login" for 192.168.1.222 at 2020-12-03 19:20:50 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 166)
+
+
+Started GET "/students/login" for 127.0.0.1 at 2020-12-03 19:21:18 +0700
+Processing by StudentsController#login as HTML
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 92)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:22:13 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/students/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:22:55 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"123", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "123"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 4.6ms | Allocations: 1218)
+
+
+  
+RuntimeError (Error):
+  
+app/controllers/students_controller.rb:13:in `login'
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:23:13 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (3.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (0.7ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.8ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 136ms (Views: 1.0ms | ActiveRecord: 27.4ms | Allocations: 32831)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:23:41 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", ""]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 2.6ms | Allocations: 800)
+
+
+  
+StandardError (Error):
+  
+app/controllers/students_controller.rb:13:in `login'
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:24:09 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", ""]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 775)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:24:25 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.5ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 120ms (Views: 0.5ms | ActiveRecord: 22.5ms | Allocations: 31102)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:32:45 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.6ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 39ms (Views: 1.1ms | ActiveRecord: 6.6ms | Allocations: 13063)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 19:32:58 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (0.5ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (2.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (1.4ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 55ms (Views: 0.6ms | ActiveRecord: 9.3ms | Allocations: 12885)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 22:31:09 +0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"6", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (1.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "6"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+Completed 401 Unauthorized in 7ms (Views: 0.4ms | ActiveRecord: 8.1ms | Allocations: 1216)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 22:31:30 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (1.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (2.4ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (1.7ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 125ms (Views: 0.6ms | ActiveRecord: 32.9ms | Allocations: 32836)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 22:34:20 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"figill", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "figill"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 748)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 22:34:34 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (0.4ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (2.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.4ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 8.0ms | Allocations: 12905)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 22:54:59 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20162324", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20162324"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 911)
+
+
+Started POST "/students/login" for 127.0.0.1 at 2020-12-03 22:55:12 +0700
+Processing by StudentsController#login as HTML
+  Parameters: {"email"=>"20164835", "password"=>"[FILTERED]", "student"=>{}}
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."number" = $1[0m  [["number", "20164835"]]
+  ↳ app/controllers/students_controller.rb:10:in `login'
+  [1m[36mProgram Load (1.0ms)[0m  [1m[34mSELECT "programs".* FROM "programs" WHERE "programs"."name" = $1[0m  [["name", "IT"]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 1]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 2]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 3]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 4]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 5]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 6]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 7]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 8]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 9]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mCourse Load (1.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."program_id" = $1[0m  [["program_id", 10]]
+  ↳ app/models/student.rb:4:in `progams'
+  [1m[36mDiem Load (0.6ms)[0m  [1m[34mSELECT "diems".* FROM "diems" WHERE "diems"."student_id" = $1[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:11:in `login'
+Completed 200 OK in 51ms (Views: 1.0ms | ActiveRecord: 9.7ms | Allocations: 12894)
+
+
