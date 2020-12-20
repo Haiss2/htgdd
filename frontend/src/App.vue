@@ -25,6 +25,12 @@ export default {
       document.dir = "ltr";
       document.body.classList.remove("rtl");
     }
+  },
+  mounted(){
+    let user = localStorage.getItem('user')
+    if(!user){
+      this.$router.push('/user/login')
+    }
   }
 };
 </script>

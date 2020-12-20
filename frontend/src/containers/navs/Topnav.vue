@@ -30,35 +30,10 @@
           <i class="simple-icon-magnifier"></i>
         </span>
       </div>
-      <div class="d-inline-block">
-        <b-dropdown
-          id="langddm"
-          class="ml-2"
-          variant="light"
-          size="sm"
-          toggle-class="language-button"
-        >
-          <template slot="button-content">
-            <span class="name">{{$i18n.locale.toUpperCase()}}</span>
-          </template>
-          <b-dropdown-item
-            v-for="(l,index) in localeOptions"
-            :key="index"
-            @click="changeLocale(l.id, l.direction)"
-          >{{l.name}}</b-dropdown-item>
-        </b-dropdown>
-      </div>
-      <div class="position-relative d-none d-none d-lg-inline-block">
-        <a
-          class="btn btn-outline-primary btn-sm ml-2"
-          target="_top"
-          :href="buyUrl"
-        >{{$t('user.buy')}}</a>
-      </div>
+     
     </div>
-    <router-link class="navbar-logo" tag="a" :to="adminRoot">
-      <span class="logo d-none d-xs-block"></span>
-      <span class="logo-mobile d-block d-xs-none"></span>
+    <router-link class="navbar-logo d-flex" tag="a" :to="adminRoot">
+      <img src="/assets/logos/hust.jpg" width="28"/> <h2 class="m-auto">HUST</h2>
     </router-link>
 
     <div class="navbar-right">
@@ -160,28 +135,9 @@
           </div>
         </div>
       </div>
-      <div class="user d-inline-block">
-        <b-dropdown
-          class="dropdown-menu-right"
-          right
-          variant="empty"
-          toggle-class="p-0"
-          menu-class="mt-3"
-          no-caret
-        >
-          <template slot="button-content">
-            <span class="name mr-1">{{currentUser.title}}</span>
-            <span>
-              <img :alt="currentUser.title" :src="currentUser.img" />
-            </span>
-          </template>
-          <b-dropdown-item>Account</b-dropdown-item>
-          <b-dropdown-item>Features</b-dropdown-item>
-          <b-dropdown-item>History</b-dropdown-item>
-          <b-dropdown-item>Support</b-dropdown-item>
-          <b-dropdown-divider />
-          <b-dropdown-item @click="logout">Sign out</b-dropdown-item>
-        </b-dropdown>
+      <div>
+       
+          <span class="name mr-3">Tuần <b>14</b>, Chúng ta có <b>2 khách</b> và <b>7 thành viên</b> trực tuyến</span>
       </div>
     </div>
   </nav>

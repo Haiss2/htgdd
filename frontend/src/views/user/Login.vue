@@ -15,8 +15,8 @@
           </p>
         </div>
         <div class="form-side">
-          <router-link tag="a" to="/">
-            <span class="logo-single" />
+          <router-link tag="a" to="/" class="d-flex mb-3">
+            <img src="/assets/logos/hust.jpg" width="50"/> <h2 class="m-auto">Đại học Bách Khoa Hà Nội</h2>
           </router-link>
           <h6 class="mb-4">{{ $t("user.login-title") }}</h6>
 
@@ -130,6 +130,7 @@ export default {
     userLogin(){
       axios.post(process.env.VUE_APP_API_URL + 'students/login', this.form)
       .then(res => {
+        localStorage.setItem('user', JSON.stringify(res.data))
         this.$router.push('/app/dashboards/analytics')
         this.$notify('success', 'Success!', 'You are login successfully')
       })

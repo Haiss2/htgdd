@@ -1,5 +1,4 @@
 import { adminRoot } from "./config";
-import { UserRole } from "../utils/auth.roles";
 
 const data = [{
   id: "dashboards",
@@ -8,12 +7,38 @@ const data = [{
   to: `${adminRoot}/dashboards/analytics`,
 },
 {
-  id: "pages",
-  icon: "iconsminds-digital-drawing",
-  label: "Program",
-  to: `${adminRoot}/pages/product/data-list`,
+  id: "profile",
+  icon: "simple-icon-user-following",
+  label: "Profile",
+  to: `${adminRoot}/profile`,
   
+},
+{
+  id: "program",
+  icon: "simple-icon-game-controller",
+  label: "Program",
+  to: `${adminRoot}/program`,
+  
+},
+{
+  id: "achievement",
+  icon: "simple-icon-badge",
+  label: "Achievement",
+  to: `${adminRoot}/achievement`,
+  
+},
+{
+  id: "registration",
+  icon: "iconsminds-gear-2",
+  label: "Registration",
+  to: `${adminRoot}/registration`,
+  
+},
+{
+  id: "logout",
+  icon: "iconsminds-power-2",
+  label: "Logout",
+  to: "/user/login",
 }
-
 ];
 export default data;

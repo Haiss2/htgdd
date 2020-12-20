@@ -32,7 +32,7 @@ export const firebaseConfig = {
 
 export const currentUser = {
   id: 1,
-  title: 'Le Kha Hai',
+  title: '',
   img: '/assets/img/profiles/l-2.jpg',
   date: 'Last seen today 15:24',
   role: UserRole.Admin
