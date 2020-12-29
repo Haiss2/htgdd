@@ -128,13 +128,19 @@ export default {
   },
   methods: {
     userLogin(){
+      let loader = this.$loading.show({color: 'tomato', opacity: 0.9})
       axios.post(process.env.VUE_APP_API_URL + 'students/login', this.form)
       .then(res => {
-        localStorage.setItem('user', JSON.stringify(res.data))
-        this.$router.push('/app/dashboards/analytics')
-        this.$notify('success', 'Success!', 'You are login successfully')
+         setTimeout(()=> {
+          loader.hide()
+          localStorage.setItem('user', JSON.stringify(res.data))
+          this.$router.push('/app/dashboards/analytics')
+          this.$notify('success', 'Success!', 'You are login successfully')
+      }, 500)
+
       })
       .catch(err => {
+        loader.hide()
         this.$notify('warning', 'Error!', 'MSSV hoac Password khong dung')
       })
       

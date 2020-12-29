@@ -4,6 +4,9 @@
       <b-tabs card no-fade>
         <b-tab :title="'Kỳ Học ' + item.name + item.semester" v-for="(item, index) in user.progams" :key="index" :active="index==user.current_semester-1">
             <b-table striped hover :items="refreshData(item.courses)"/>
+            <div class="text-right mr-3">
+              <span class="text-success">Tổng cộng</span> <b>{{total(item.courses)}}</b> tín chỉ.
+            </div>
         </b-tab>
       </b-tabs>
     </div>
@@ -17,6 +20,12 @@ export default {
     };
   },
   methods: {
+    total(data){
+      let result = 0
+      data.map(item => {result += item.volumn})
+      return result
+    },
+
     refreshData(data){
       return data.map(item => {return{
         'ID': item.id,
